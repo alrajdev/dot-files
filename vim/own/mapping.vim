@@ -49,9 +49,6 @@ nnoremap <C-l> <C-w>l
 " Selection
 "================
 
-" yank whole line without newline character
-nnoremap Y 0vg_y
-
 " shift-home, end to select
 noremap <S-home> v^
 noremap <S-end> vg_
