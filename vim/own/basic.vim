@@ -20,6 +20,7 @@ set tabstop=4
 set shiftwidth=4
 set textwidth=80    " max width of text in a line
 set nowrap          " don't wrap line
+set colorcolumn=+1
 
 set scrolloff=10
 set sidescrolloff=10

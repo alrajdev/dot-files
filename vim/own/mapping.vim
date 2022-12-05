@@ -55,8 +55,11 @@ noremap <S-end> vg_
 
 
 "===============
-" Text
+" Actual Work
 "===============
+
+" toggle relative number
+nnoremap <C-n> :set relativenumber!<cr>
 
 " clear search highlight on double press 'esc'
 nnoremap <leader>h :noh<cr><esc>
@@ -78,7 +81,7 @@ vnoremap <S-j> :m '>+1<cr>gv=gv
 nnoremap <leader>rc :vsplit $MYVIMRC<cr>    
 
 " source .vimrc
-nnoremap <leader>s :source<cr>
+nnoremap <leader>s :source $MYVIMRC<cr>
 
 
 "===============
