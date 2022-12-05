@@ -1,5 +1,5 @@
 " leader
-let g:mapleader="\<space>" 
+let g:mapleader="\<space>"
 
 
 "================
@@ -55,7 +55,7 @@ noremap <S-end> vg_
 
 
 "===============
-" Actual Work
+" Others
 "===============
 
 " toggle relative number
@@ -63,22 +63,30 @@ nnoremap <C-n> :set relativenumber!<cr>
 
 " clear search highlight on double press 'esc'
 nnoremap <leader>h :noh<cr><esc>
+nnoremap <leader>l :let @/=""<cr>
 
-" move current line up or down
-nnoremap <S-j> :m .+1<cr>==
-nnoremap <S-k> :m .-2<cr>==
+" toggle list
+nnoremap <F3> :set list!<cr>
+inoremap <F3> <esc>:set list!<cr>a
+vnoremap <F3> <esc>:set list!<cr>
 
-" move selected lines up or down
-vnoremap <S-k> :m '<-2<cr>gv=gv
-vnoremap <S-j> :m '>+1<cr>gv=gv
+" move current line
+nnoremap <S-k> :m .-2<cr>== " move up
+nnoremap <S-j> :m .+1<cr>== " move down
 
+" move selected lines
+vnoremap <S-k> :m '<-2<cr>gv=gv " move up
+vnoremap <S-j> :m '>+1<cr>gv=gv " move down
+
+" <F1> to K
+noremap <F1> K
 
 "===============
 " .vimrc
 "===============
 
 " open .vimrc in vsplit
-nnoremap <leader>rc :vsplit $MYVIMRC<cr>    
+nnoremap <leader>rc :vsplit $MYVIMRC<cr>
 
 " source .vimrc
 nnoremap <leader>s :source $MYVIMRC<cr>
