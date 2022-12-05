@@ -68,7 +68,7 @@ nnoremap <leader>l :let @/=""<cr>
 " toggle list
 nnoremap <F3> :set list!<cr>
 inoremap <F3> <esc>:set list!<cr>a
-vnoremap <F3> <esc>:set list!<cr>
+vnoremap <F3> <esc>:set list!<cr>gv
 
 " move current line
 nnoremap <S-k> :m .-2<cr>== " move up
