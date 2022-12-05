@@ -4,6 +4,10 @@
 
 - clean: ['~']
 
+- create:
+    - ~/.vim
+
 - link:
     ~/.vimrc: vim/vimrc
     ~/.vim/own: vim/own
+    ~/.vim/autoload: vim/autoload
