@@ -7,6 +7,8 @@ filetype plugin on  " load plugins for specific file types
 filetype indent on  " turn on indent
 syntax enable       " turn on syntax
 
+set autoread
+
 set number          " show current line number
 set relativenumber  " show relative line number
 
