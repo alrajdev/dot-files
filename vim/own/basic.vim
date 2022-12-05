@@ -25,10 +25,14 @@ set colorcolumn=+1
 set scrolloff=10
 set sidescrolloff=10
 set hlsearch        " highlight searched text
+set incsearch
 
 set confirm         " ask confirmation on non saved buffer exit
 
 set backspace=indent,eol,start
+
+set showbreak=↪\ 
+set listchars=tab:▸·,eol:↲,trail:␣,precedes:←,extends:→
 
 set showcmd         " show command being typed
 set showmode        " show current mode
