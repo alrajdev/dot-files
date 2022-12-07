@@ -48,14 +48,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-
-"================
-" Selection
-"================
-
-" shift-home, end to select
-noremap <S-home> v^
-noremap <S-end> vg_
+" Tab
+nnoremap [t :tabprevious<cr>
+nnoremap ]t :tabnext<cr>
 
 
 "===============
