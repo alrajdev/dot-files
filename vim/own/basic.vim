@@ -53,6 +53,6 @@ endif
 
 augroup active_window
     autocmd!
-    autocmd WinEnter * set cursorline relativenumber
+    autocmd VimEnter,WinEnter * set cursorline relativenumber
     autocmd WinLeave * set nocursorline norelativenumber
 augroup END
