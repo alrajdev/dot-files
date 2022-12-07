@@ -1,3 +1,4 @@
+source ~/.vim/own/functions.vim
 source ~/.vim/own/basic.vim
 source ~/.vim/own/mapping.vim
 source ~/.vim/own/plugins.vim

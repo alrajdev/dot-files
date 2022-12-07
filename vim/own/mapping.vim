@@ -65,6 +65,9 @@ noremap <S-end> vg_
 " toggle relative number
 nnoremap <C-n> :set relativenumber!<cr>
 
+" toggle colorcolumn
+nnoremap <silent> <leader>cc :call ToggleColorColumn()<cr>
+
 " clear search highlight on double press 'esc'
 nnoremap <leader>h :noh<cr><esc>
 nnoremap <leader>l :let @/=""<cr>
