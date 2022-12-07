@@ -7,12 +7,13 @@ filetype plugin on  " load plugins for specific file types
 filetype indent on  " turn on indent
 syntax enable       " turn on syntax
 
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
 set autoread
 
 set number          " show current line number
-set relativenumber  " show relative line number
-
-set cursorline      " hightlight cursor line
 
 set expandtab       " use spaces instead of tab
 set softtabstop=4
@@ -50,10 +51,8 @@ if version >= 703
     set undoreload=10000
 endif
 
-" You can split a window into sections by typing `:split` or `:vsplit`.
-" Display cursorline and cursorcolumn ONLY in active window.
-augroup cursor_off
+augroup active_window
     autocmd!
-    autocmd WinLeave * set nocursorline
-    autocmd WinEnter * set cursorline
+    autocmd WinEnter * set cursorline relativenumber
+    autocmd WinLeave * set nocursorline norelativenumber
 augroup END
