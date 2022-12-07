@@ -9,9 +9,13 @@ let g:mapleader="\<space>"
 " insert to normal
 inoremap ,. <esc>
 
-" easy command mode jump from normal mode
-nnoremap <space> :
 
+"================
+" Override
+"================
+
+" gf to open non existing file
+nnoremap gf :e <cfile><cr>
 
 "================
 " Nop
