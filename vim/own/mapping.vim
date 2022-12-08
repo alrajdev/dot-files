@@ -11,13 +11,6 @@ inoremap ,. <esc>
 
 
 "================
-" Override
-"================
-
-" gf to open non existing file
-nnoremap gf :e <cfile><cr>
-
-"================
 " Nop
 "================
 
@@ -32,6 +25,21 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
+
+
+"================
+" Override
+"================
+
+" gf to open non existing file
+nnoremap gf :e <cfile><cr>
+
+"================
+" Remap
+"================
+
+" <F1> to K
+noremap <F1> K
 
 
 "================
@@ -54,7 +62,7 @@ nnoremap ]t :tabnext<cr>
 
 
 "===============
-" Others
+" Buffer
 "===============
 
 " toggle relative number
@@ -79,8 +87,6 @@ nnoremap <S-j> :m .+1<cr>== " move down
 vnoremap <S-k> :m '<-2<cr>gv=gv " move up
 vnoremap <S-j> :m '>+1<cr>gv=gv " move down
 
-" <F1> to K
-noremap <F1> K
 
 "===============
 " .vimrc
