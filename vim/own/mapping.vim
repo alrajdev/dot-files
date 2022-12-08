@@ -69,7 +69,6 @@ nnoremap <leader>/ :let @/=""<cr>
 
 " toggle list
 nnoremap <leader>l :set list!<cr>
-inoremap <leader>l <esc>:set list!<cr>a
 vnoremap <leader>l <esc>:set list!<cr>gv
 
 " move current line
