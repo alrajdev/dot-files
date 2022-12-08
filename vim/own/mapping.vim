@@ -58,19 +58,19 @@ nnoremap ]t :tabnext<cr>
 "===============
 
 " toggle relative number
-nnoremap <C-n> :set relativenumber!<cr>
+nnoremap <leader>rn :set relativenumber!<cr>
 
 " toggle colorcolumn
 nnoremap <silent> <leader>cc :call ToggleColorColumn()<cr>
 
 " clear search highlight on double press 'esc'
 nnoremap <leader>h :noh<cr><esc>
-nnoremap <leader>l :let @/=""<cr>
+nnoremap <leader>/ :let @/=""<cr>
 
 " toggle list
-nnoremap <F3> :set list!<cr>
-inoremap <F3> <esc>:set list!<cr>a
-vnoremap <F3> <esc>:set list!<cr>gv
+nnoremap <leader>l :set list!<cr>
+inoremap <leader>l <esc>:set list!<cr>a
+vnoremap <leader>l <esc>:set list!<cr>gv
 
 " move current line
 nnoremap <S-k> :m .-2<cr>== " move up
