@@ -79,13 +79,23 @@ nnoremap <leader>/ :let @/=""<cr>
 nnoremap <leader>l :set list!<cr>
 vnoremap <leader>l <esc>:set list!<cr>gv
 
-" move current line
-nnoremap <S-k> :m .-2<cr>== " move up
-nnoremap <S-j> :m .+1<cr>== " move down
+" move current line up
+nnoremap <S-k> :m .-2<cr>==
 
-" move selected lines
-vnoremap <S-k> :m '<-2<cr>gv=gv " move up
-vnoremap <S-j> :m '>+1<cr>gv=gv " move down
+" move current line down
+nnoremap <S-j> :m .+1<cr>==
+
+" move selected lines up
+vnoremap <S-k> :m '<-2<cr>gv=gv
+
+" move selected lines down
+vnoremap <S-j> :m '>+1<cr>gv=gv
+
+" move text from cursor to EOL to new line above
+nnoremap <leader>X v$hxO<esc>p0
+
+" move text from cursor to EOL to new line below
+nnoremap <leader>x v$hxo<esc>p0
 
 
 "===============
