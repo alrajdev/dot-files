@@ -27,6 +27,7 @@ set scrolloff=10
 set sidescrolloff=10
 set hlsearch        " highlight searched text
 set incsearch
+set smartcase
 
 set confirm         " ask confirmation on non saved buffer exit
 
