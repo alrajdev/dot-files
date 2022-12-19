@@ -62,7 +62,7 @@ nnoremap ]t :tabnext<cr>
 
 
 "===============
-" Buffer
+" Buffer Visual
 "===============
 
 " toggle relative number
@@ -78,6 +78,11 @@ nnoremap <leader>/ :let @/=""<cr>
 " toggle list
 nnoremap <leader>l :set list!<cr>
 vnoremap <leader>l <esc>:set list!<cr>gv
+
+
+"===============
+" Buffer Editing
+"===============
 
 " move current line up
 nnoremap <S-k> :m .-2<cr>==
