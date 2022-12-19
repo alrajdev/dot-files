@@ -92,10 +92,7 @@ vnoremap <S-k> :m '<-2<cr>gv=gv
 vnoremap <S-j> :m '>+1<cr>gv=gv
 
 " move text from cursor to EOL to new line above
-nnoremap <leader>X v$hxO<esc>p0
-
-" move text from cursor to EOL to new line below
-nnoremap <leader>x v$hxo<esc>p0
+nnoremap <leader>x v$hxO<esc>p0
 
 
 "===============
