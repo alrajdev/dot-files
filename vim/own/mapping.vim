@@ -77,6 +77,7 @@ nnoremap <leader>/ :let @/=""<cr>
 
 " toggle list
 nnoremap <leader>l :set list!<cr>
+inoremap <C-l> <esc>:set list!<cr>a
 vnoremap <leader>l <esc>:set list!<cr>gv
 
 
