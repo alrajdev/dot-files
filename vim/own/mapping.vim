@@ -34,13 +34,6 @@ nnoremap <down> <nop>
 " gf to open non existing file
 nnoremap gf :e <cfile><cr>
 
-"================
-" Remap
-"================
-
-" <F1> to K
-noremap <F1> K
-
 
 "================
 " Navigation
@@ -84,12 +77,6 @@ vnoremap <leader>l <esc>:set list!<cr>gv
 "===============
 " Buffer Editing
 "===============
-
-" move current line up
-nnoremap <S-k> :m .-2<cr>==
-
-" move current line down
-nnoremap <S-j> :m .+1<cr>==
 
 " move selected lines up
 vnoremap <S-k> :m '<-2<cr>gv=gv
