@@ -28,7 +28,7 @@ nnoremap <down> <nop>
 
 
 "================
-" Override
+" Extend
 "================
 
 " gf to open non existing file
