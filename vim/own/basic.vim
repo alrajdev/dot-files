@@ -19,7 +19,6 @@ set expandtab       " use spaces instead of tab
 set softtabstop=4
 set tabstop=4
 set shiftwidth=4
-set textwidth=80    " max width of text in a line
 set nowrap          " don't wrap line
 set colorcolumn=+1
 
