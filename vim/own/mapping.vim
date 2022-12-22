@@ -59,19 +59,19 @@ nnoremap ]t :tabnext<cr>
 "===============
 
 " toggle relative number
-nnoremap <leader>rn :set relativenumber!<cr>
+nnoremap <leader>tr :set relativenumber!<cr>
 
 " toggle colorcolumn
-nnoremap <silent> <leader>cc :call ToggleColorColumn()<cr>
+nnoremap <silent> <leader>tc :call ToggleColorColumn()<cr>
 
 " clear search highlight on double press 'esc'
-nnoremap <leader>h :noh<cr><esc>
-nnoremap <leader>/ :let @/=""<cr>
+nnoremap <leader>dh :noh<cr><esc>
+nnoremap <leader>d/ :let @/=""<cr>
 
 " toggle list
-nnoremap <leader>l :set list!<cr>
+nnoremap <leader>tl :set list!<cr>
+vnoremap <leader>tl <esc>:set list!<cr>gv
 inoremap <C-l> <esc>:set list!<cr>a
-vnoremap <leader>l <esc>:set list!<cr>gv
 
 
 "===============
@@ -85,7 +85,7 @@ vnoremap <S-k> :m '<-2<cr>gv=gv
 vnoremap <S-j> :m '>+1<cr>gv=gv
 
 " move text from cursor to EOL to new line above
-nnoremap <leader>x v$hxO<esc>p0
+nnoremap <leader>ex v$hxO<esc>p0
 
 
 "===============
@@ -93,10 +93,10 @@ nnoremap <leader>x v$hxO<esc>p0
 "===============
 
 " open .vimrc in vsplit
-nnoremap <leader>rc :vsplit $MYVIMRC<cr>
+nnoremap <leader>ve :vsplit $MYVIMRC<cr>
 
 " source .vimrc
-nnoremap <leader>s :source $MYVIMRC<cr>
+nnoremap <leader>vs :source $MYVIMRC<cr>
 
 
 "===============
