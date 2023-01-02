@@ -14,8 +14,11 @@ inoremap ,. <esc>
 " Nop
 "================
 
-" disable esc
-inoremap <esc> <nop>
+" don't remove <esc> for ideaVim
+if !has('ide')
+    inoremap <esc> <nop>
+endif
+
 
 " disable ,. in normal mode, . repeats action
 nnoremap ,. <nop>
