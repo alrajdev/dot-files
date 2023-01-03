@@ -2,12 +2,9 @@
     link:
       relink: true
 
-- clean: ['~']
-
 - create:
-    - ~/.vim
+    - ~/.config/nvim
 
 - link:
-    ~/.vimrc: vim/vimrc
-    ~/.vim/own: vim/own
-    ~/.vim/autoload: vim/autoload
+    ~/.config/nvim/init.vim: nvim/init.vim
+    ~/.config/nvim/lua: nvim/lua
