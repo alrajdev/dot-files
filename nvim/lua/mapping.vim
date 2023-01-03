@@ -19,10 +19,6 @@ if !has('ide')
     inoremap <esc> <nop>
 endif
 
-
-" disable ,. in normal mode, . repeats action
-nnoremap ,. <nop>
-
 " disable arrow keys
 nnoremap <left> <nop>
 nnoremap <right> <nop>
